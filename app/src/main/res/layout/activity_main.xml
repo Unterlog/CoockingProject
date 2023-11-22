@@ -6,21 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1429dp"
+        android:layout_height="1617dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/krasivye_i_sovremennye_kuhni_iz_naturalnogo_dereva1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="663dp"
+        android:layout_height="420dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/loginText"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/loginText"
+        app:layout_constraintTop_toTopOf="@+id/welMes"
+        app:layout_constraintVertical_bias="0.395"
+        app:srcCompat="@android:drawable/picture_frame" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/welMes"
+        android:layout_width="147dp"
+        android:layout_height="46dp"
+        android:text="@string/welcome_massage"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="298dp" />
+        android:layout_height="48dp"
+        android:layout_marginTop="384dp"
+        android:onClick="onButtonClick"
+        android:text="@string/buttonInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginText"
+        android:layout_width="161dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="@string/loginHint"
+        android:inputType="text"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welMes"
+        android:autofillHints="username"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="93dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#FF0505"
+        android:onClick="onExitButtonClick"
+        android:text="@string/exit"
+        app:iconTint="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
