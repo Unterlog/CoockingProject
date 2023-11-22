@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
 import android.widget.EditText;
@@ -32,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         text.setText("");
         button.setText("Вход...");
         button.setBackgroundColor(Color.GREEN);
+        openBasicMenu();
+    }
+    public void openBasicMenu() {
+        Intent intent = new Intent(this, BasicMenu.class);
+        startActivity(intent);
     }
     public void onExitButtonClick(View v) {
         AlertDialog.Builder abuilder = new AlertDialog.Builder(MainActivity.this);
