@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".BasicMenu">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="490dp"
+        android:layout_height="798dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/krasivye_i_sovremennye_kuhni_iz_naturalnogo_dereva1" />
+
+    <Button
+        android:id="@+id/addProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="250dp"
+        android:onClick="onClick"
+        android:text="@string/addProduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/productList"
+        app:layout_constraintStart_toStartOf="@+id/addProductButton"
+        app:layout_constraintTop_toBottomOf="@+id/addProductButton" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/costPrice"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

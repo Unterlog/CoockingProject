@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="1429dp"
-        android:layout_height="1617dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView2"
+        android:layout_width="490dp"
+        android:layout_height="798dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/krasivye_i_sovremennye_kuhni_iz_naturalnogo_dereva1" />
@@ -57,6 +57,7 @@
         android:id="@+id/loginText"
         android:layout_width="161dp"
         android:layout_height="58dp"
+        android:autofillHints="username"
         android:ems="10"
         android:hint="@string/loginHint"
         android:inputType="text"
@@ -64,9 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welMes"
-        android:autofillHints="username"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/welMes" />
 
     <Button
         android:id="@+id/button3"

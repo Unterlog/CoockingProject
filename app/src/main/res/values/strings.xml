@@ -8,4 +8,7 @@
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="close">Закрытие приложения</string>
+    <string name="costPrice">Себестоимость</string>
+    <string name="addProduct">Добавить товар</string>
+    <string name="productList">Список товаров</string>
 </resources>
